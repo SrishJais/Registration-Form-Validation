@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-size: cover;
+  background-color: #82a6c9;
+  /* background-image: linear-gradient(to right,rgb(0, 107, 128),rgb(0, 255, 238)); */
+  background-color: pink;
+
+  height: 100vh;
+}
+.g-3,
+.gy-3 {
+  --bs-gutter-y: 0rem;
+}
+/* ________________________________________heading______________________________________ */
+#heading {
+  font-weight: bolder;
+  color: #675f5f;;
+}
+
+/* ______________________________________details_______________________________________ */
+#details {
+  border-radius: 10px;
+  background-color: #192838;
+  background-color: white;
+  border:5px solid black;
+}
+
+label {
+  color: rgb(247, 73, 102);
+  font-weight: bolder;
+}
+.form-control,
+textarea,
+select {
+  color: #212529;
+  font-weight: bolder;
+  border: 4px solid #dfdfdf;
+  background-color: white;
+}
+.form-control:focus,
+textarea:focus {
+  color: #212529;
+
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+  font-weight: bolder;
+  border: 5px solid #5a697e;
+}
+.form-select {
+  background-color: rgb(247, 73, 102);
+  color:white;
+  font-weight: bolder;
+}
+input:-internal-autofill-selected {
+  background-color:white;
+}
+.form-select:focus {
+  color: #212529;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+  border: 5px solid #5a697e;
+}
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+/* ____________________________________dropdown option_________________________________ */
+option {
+  color: white;
+  font-weight: bolder;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  color: rgb(247, 73, 102);
+  background-color: #212529;
+}
+option:hover {
+  background-color: white;
+  color: #212529;
+}
+/* ______________________________________________radio_btn_____________________________________ */
+#gridRadios1,
+#gridRadios2,
+legend {
+  color: orange;
+  font-weight: bolder;
+}
+/* ________________________________________________Gender_________________________________ */
+#gender {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: min-content;
+}
+.gender {
+  margin-left: 10px;
+}
+input[name="Gender"] {
+  accent-color: #192838;
+
+    border: 3px solid #dfdfdf;
+
+}
+/* _______________________________________________file upload__________________________________ */
+input[type="file" i] {
+  align-items: baseline;
+  color: #192838;
+  text-overflow: ellipsis;
+  white-space: pre;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+input #file:hover {
+  align-items: baseline;
+  color: #192838;
+  text-overflow: ellipsis;
+  white-space: pre;
+  border: none;
+  background-color: none;
+}
+input[type="file"]::file-selector-button {
+  background-color: black;
+  border: 5px solid rgb(247, 73, 102);
+  color: white;
+  padding: 7px;
+}
+/* __________________________________check box__________________________________________ */
+.form-check-input:checked {
+  background-color: black;
+
+  color: orange;
+  font-size: larger;
+}
+.form-check p {
+  color: white;
+  font-weight: bold;
+}
+.form-check-input[type=checkbox] {
+  border-radius: 0.25em;
+  border: 3px solid #dfdfdf;
+}
+
+/* __________________________________________reset and submit btn________________________ */
+#reset-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 55.5px;
+  padding-right: 55.5px;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #b11750, #272121);
+  background-image: linear-gradient(to right, #b11750, #130103);
+}
+/* __________________________________submit btn _______________________________________*/
+#submit-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bolder;
+  background: #00b894;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 107, 128),
+    rgb(0, 255, 238)
+  );
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #0dcaf0,
+    #0dcaf0,
+    rgb(130 166 201)
+  );
+  background-image: linear-gradient(to right, #0dcaf0, rgb(1 22 44));
+ 
+}
+
+/* ________________________________________________________________________________________ */
+.swal-button--danger {
+  background-color: #7cd1f9;
+}
+.swal-button--danger:not([disabled]):hover {
+  background-color: #7cd1f9;
+}
+/* _________________________________________icon css_______________________________ */
+#success,
+#warning,
+#error {
+  font-weight: bolder;
+  font-size: large;
+}
+.form-group {
+  position: relative;
+}
+.position {
+  position: absolute;
+  right: 25px;
+  top: 41px;
+}
+
+#success {
+  color: green;
+}
+#warning {
+  color: orange;
+}
+#error {
+  color: red;
+}
+/* _________________________________________error msg_________________________________ */
+.msg {
+  font-weight: bold;
+  color: red;
+}
+.form-check .msg {
+  font-weight: bold;
+  color: red;
+}
