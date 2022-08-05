@@ -234,7 +234,7 @@ function graduationYrValidation(x) {
     show_empty_msg(x);
     return false;
   } else {
-    if (x.value.match(/^[12][0-9]{3}$/)) {
+    if (x.value.match(/^[12][0-9]{3}[ ]*$/)) {
       show_success_icon(x);
       x.nextElementSibling.nextElementSibling.innerHTML = "";
       return true;
@@ -274,7 +274,7 @@ function phoneValidation(x) {
     show_empty_msg(x);
     return false;
   } else {
-    if (x.value.match(/^[6789][0-9]{9}$/)) {
+    if (x.value.match(/^[6789][0-9]{9}[ ]*$/)) {
       show_success_icon(x);
       x.nextElementSibling.nextElementSibling.innerHTML = "";
       return true;
@@ -298,7 +298,7 @@ function locationValidation(x) {
 
 // pincodeValidation utility function
 function pincodeValidation(x) {
-  let pincode_regex = /^[1-9]{1}[0-9]{2}[\s]{0,1}[0-9]{3}$/;
+  let pincode_regex = /^[1-9]{1}[0-9]{2}[\s]{0,1}[0-9]{3}[ ]*$/;
   if (x.value != "") {
     if (x.value.match(pincode_regex)) {
       show_success_icon(x);
