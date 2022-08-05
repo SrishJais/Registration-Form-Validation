@@ -184,7 +184,7 @@ function nameValidation(x) {
       show_empty_msg(x);
       return false;
     } else {
-      if (x.value.match(/^[a-zA-Z\-\'\`\u00E0-\u00FC]+$/)) {
+      if (x.value.match(/^[a-zA-Z\-\'\`\u00E0-\u00FC]+[ ]*$/)) {
         show_success_icon(x);
         x.nextElementSibling.nextElementSibling.innerHTML = "";
         return true;
